@@ -21,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/shubham2704/connect-4/issues"
   },
-  "homepage": "https://github.com/shubham2704/connect-4#readme"
+  "homepage": "https://github.com/shubham2704/connect-4#readme",
+  "devDependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.21.6"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain connectfourdemo.surge.sh"
+    }
+  }
 }
